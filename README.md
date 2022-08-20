@@ -12,3 +12,8 @@ Logistic Regression
 
 
 Neural Network
+
+Preprocessing Steps:
+* Scale numerical columns greater than 10
+   * This would include BMI, MentHlth, and PhysHlth columns
+*
