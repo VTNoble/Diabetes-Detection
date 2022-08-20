@@ -16,4 +16,4 @@ Neural Network
 Preprocessing Steps:
 * Scale numerical columns greater than 10
    * This would include BMI, MentHlth, and PhysHlth columns
-*
+* Convert categorical columns to binary columns using pandas get_dummies
