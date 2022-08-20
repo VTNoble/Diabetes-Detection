@@ -14,6 +14,7 @@ Logistic Regression
 Neural Network
 
 Preprocessing Steps:
-* Scale numerical columns greater than 10
+* Scale numerical columns that's not binary
    * This would include BMI, MentHlth, and PhysHlth columns
-* Convert categorical columns to binary columns using pandas get_dummies
+* Convert binned categories to binary columns using pandas get_dummies
+   * This would include Age, Education, Income
