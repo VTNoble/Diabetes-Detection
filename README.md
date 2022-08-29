@@ -1,20 +1,15 @@
 # Diabetes-Detection
-Supervised machine learning models for Diabetes detection.
 
-Models to apply:
+In this repository, different supervised classification models were fit and tuned on a dataset created from a Behavorial Risk Factor Surveillance System (BRFSS) telephone survey. The best model was then used to create a web application using streamlit.
 
-Logistic Regression
-* 19-Supervised-Machine-Learning
-    * Day 1: Activity 5,  6 for basic logistic regression models
-    * Day 1: Activity 7, 8 & Day 2: Activity 2, 3 for confusion matrix
-    * Day 2 has activities on KNN, ROC curves, and SVM. Not sure if we will want to use these
-    * Day 3: Random Forest: I think we likely want to include a random forest model. Good for health data.
+In addition, Tableau was used to create visualizations to help understand the target and feature variables in the dataset.
 
+Models Used: Logistic Regression, Random Forest Classifier, Ada Boost Classifier
 
-Neural Network
+Libraries/Tools Used: Jupyter Notebook, Python, Pandas, Sklearn, Pickle, Streamlit, Tableau
 
-Preprocessing Steps:
-* Scale numerical columns that's not binary
-   * This would include BMI, MentHlth, and PhysHlth columns
-* Convert binned categories to binary columns using pandas get_dummies
-   * This would include Age, Education, Income
+Data Source: https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?select=diabetes_binary_health_indicators_BRFSS2015.csv
+
+Web App: https://vtnoble-diabetes-detection-app-uzoftx.streamlitapp.com/
+
+![Web App Preview](app_screenshot.png?raw=true "Web App Preview")
