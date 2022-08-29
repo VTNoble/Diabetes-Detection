@@ -2,10 +2,10 @@
 from sklearn.ensemble import AdaBoostClassifier
 import streamlit as st
 import pandas as pd
+import pickle
 
 # load AdaBoostClassifer model we created in jupyter notebook
-model = AdaBoostClassifier
-model.load_model('Model/model.json')
+model = pickle.load(open('Model/model.json', 'rb'))
 
 # cache for faster loading
 @st.cache
@@ -187,6 +187,6 @@ Income = st.number_input('What is your income:', min_value=0.0, max_value=100000
 if st.button('Predict Diabetes'):
     diabetes = predict(HighBP, HighChol, CholCheck, BMI, Smoker, Stroke, HeartDiseaseorAttack, PhysActivity, Fruits, Veggies, HvyAlcoholConsump, AnyHealthcare, NoDocbcCost, GenHlth, MentHlth, PhysHlth, DiffWalk, Sex, Age, Education, Income)
     if diabetes == 0:
-        st.success(f'The model says you are not diabetic.')
+        st.success(f'The model predicts that you are not diabetic.')
     elif diabetes == 1:
-        st.success(f'The model says you are prediabetic or diabetic.')
+        st.success(f'The model predicts that you are prediabetic or diabetic.')
