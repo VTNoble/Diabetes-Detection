@@ -18,4 +18,4 @@ Data Source: https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicato
 
 Web App: https://vtnoble-diabetes-detection-app-uzoftx.streamlitapp.com/
 
-![Web App Preview](app_screenshot.png?raw=true "Web App Preview")
+![Web App Preview](app_screenshot.png?raw=true "Web App Preview") 
