@@ -18,6 +18,7 @@ Data Source: https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicato
 
 Web App: https://vtnoble-diabetes-detection-app-uzoftx.streamlitapp.com/
 
+<<<<<<< HEAD
 ![Web App Preview](app_screenshot.png?raw=true "Web App Preview")
 
 2022-09-13 Update: Models were tested on a dataset that has a 50/50 split of the target variable.
@@ -26,3 +27,6 @@ Web App: https://vtnoble-diabetes-detection-app-uzoftx.streamlitapp.com/
         * While the models performed better on unscaled data with the full dataset, they performed better on the scaled data witht he 50/50 split dataset.
         * A XGBoost model was tested and slightly outperformed the ADABoost model.
     
+=======
+![Web App Preview](app_screenshot.png?raw=true "Web App Preview") 
+>>>>>>> 35c81e7b2fd16a3342f4f1785ab2b10d35c6fb6a
