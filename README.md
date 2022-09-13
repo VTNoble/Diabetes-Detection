@@ -21,8 +21,7 @@ Web App: https://vtnoble-diabetes-detection-app-uzoftx.streamlitapp.com/
 ![Web App Preview](app_screenshot.png?raw=true "Web App Preview")
 
 2022-09-13 Update: Models were tested on a dataset that has a 50/50 split of the target variable.
-    * Findings:
+    Findings:
         * Accuracy decreased from ~85% to ~76% and recall decreased from ~97% to ~76%. This is likely due to the full dataset being heavily leaned towards the non-diabetic (0 value) for the target variable.
         * While the models performed better on unscaled data with the full dataset, they performed better on the scaled data witht he 50/50 split dataset.
         * A XGBoost model was tested and slightly outperformed the ADABoost model.
-    
